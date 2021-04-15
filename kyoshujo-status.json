@@ -1,0 +1,34 @@
+{
+  "days": [
+    {
+      "date": "04月15日 (木)",
+      "availableTimes": []
+    },
+    {
+      "date": "04月16日 (金)",
+      "availableTimes": [
+        "15:10"
+      ]
+    },
+    {
+      "date": "04月17日 (土)",
+      "availableTimes": []
+    },
+    {
+      "date": "04月18日 (日)",
+      "availableTimes": []
+    },
+    {
+      "date": "04月19日 (月)",
+      "availableTimes": []
+    },
+    {
+      "date": "04月20日 (火)",
+      "availableTimes": []
+    },
+    {
+      "date": "04月21日 (水)",
+      "availableTimes": []
+    }
+  ]
+}
