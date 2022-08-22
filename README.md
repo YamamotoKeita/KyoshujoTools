@@ -1,3 +1,7 @@
+A bot that periodically logs into my driving school's web page, scrapes it, and sends a Slack message of available reservations.
+
+I got my driving license and I don't need it anymore.
+
 # Login Page
 
 https://www.e-license.jp/el25/?abc=zA5IKlz%2B5to%2BbrGQYS%2B1OA%3D%3D
@@ -10,8 +14,8 @@ https://www.e-license.jp/el25/pc/p01a.action
 
 ## Post Data
 
-- b.studentId=03744
-- b.password=19811202
+- b.studentId=<my student id>
+- b.password=<my password>
 - method:doLogin=%83%8D%83O%83C%83%93             ログイン(Shift_JIS)
 - b.wordsStudentNo=%8B%B3%8FK%90%B6%94%D4%8D%86   教習生番号(Shift_JIS)
 - b.processCd=
@@ -26,7 +30,7 @@ https://www.e-license.jp/el25/pc/p01a.action
 - Origin: https://www.e-license.jp
 - Content-Type: application/x-www-form-urlencoded
 - User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 11_2_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.114 Safari/537.36
-- Cookie: 以下に記載
+- Cookie: (the followings)
 
 ## Request Cookies
 
@@ -73,7 +77,7 @@ tdのclassで空き状況が分かる
 - 前回記録から新しい空きが増えていれば通知
 
 ## ストレージ
-空き時間はJSONでファイル保存
+空き時間はJSONでファイルに保存
 
 ```json
 [
@@ -81,5 +85,3 @@ tdのclassで空き状況が分かる
   {"date": "04-16", "availableTimes": []}
 ]
 ```
-
-## Library
